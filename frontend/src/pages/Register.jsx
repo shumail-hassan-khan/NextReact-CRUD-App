@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import axiosInstance from '../api/axiosInstance';                           
 import { useNavigate } from 'react-router-dom';
 import './Register.css';
 
@@ -27,7 +27,7 @@ export default function Register() {
         }
 
         try {
-            const res = await axios.post('http://localhost:3000/api/register', form);
+            const res = await axiosInstance.post('http://localhost:3000/api/register', form);
             setMessage(res.data.message);
 
             if (res.status === 201) {

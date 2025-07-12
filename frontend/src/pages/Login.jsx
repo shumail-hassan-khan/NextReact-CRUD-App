@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import axiosInstance from '../api/axiosInstance';
 import { useNavigate, Link } from 'react-router-dom';
 import './Login.css';
 
@@ -16,7 +16,7 @@ export default function Login() {
         e.preventDefault();
 
         try {
-            const res = await axios.post('http://localhost:3000/api/login', form);
+            const res = await axiosInstance.post('http://localhost:3000/api/login', form);
             setMessage(res.data.message);
             localStorage.setItem('user', JSON.stringify(res.data.user));
             navigate('/dashboard');
