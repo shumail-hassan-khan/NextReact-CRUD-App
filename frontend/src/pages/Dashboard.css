@@ -1,0 +1,110 @@
+/* Layout */
+.dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    background-color: #f9fafb;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1e293b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logout-button {
+    background-color: #ef4444;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: #1e293b;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.car-form,
+.car-table {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 800px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.car-form input,
+.car-form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.car-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.car-table th,
+.car-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}

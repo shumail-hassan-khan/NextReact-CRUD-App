@@ -1,0 +1,39 @@
+.car-table-container {
+    margin-top: 30px;
+}
+
+.car-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.car-table th,
+.car-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.car-table th {
+    background-color: #00257d;
+    color: white;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    margin: 0 3px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #1b3b92;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}

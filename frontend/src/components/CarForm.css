@@ -1,0 +1,33 @@
+.car-form-container {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.car-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.car-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.car-form button {
+    padding: 10px;
+    background-color: #00257d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-message {
+    margin-top: 10px;
+    color: green;
+}
